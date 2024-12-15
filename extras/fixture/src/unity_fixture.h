@@ -28,7 +28,7 @@ int UnityMain(int argc, const char* argv[], void (*runAllTests)(void));
 
 
 #define TEST_GROUP(group)\
-    static const char* TEST_GROUP_##group = #group
+    static const char* TEST_GROUP_##group = #group;
 
 #define TEST_SETUP(group) void TEST_##group##_SETUP(void);\
     void TEST_##group##_SETUP(void)
